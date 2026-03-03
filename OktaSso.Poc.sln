@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OktaSso.Poc.Web", "OktaSso.Poc.Web\OktaSso.Poc.Web.csproj", "{7C0A0CF5-798B-4793-A9D4-D75EDCB50447}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C0A0CF5-798B-4793-A9D4-D75EDCB50447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C0A0CF5-798B-4793-A9D4-D75EDCB50447}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C0A0CF5-798B-4793-A9D4-D75EDCB50447}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C0A0CF5-798B-4793-A9D4-D75EDCB50447}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

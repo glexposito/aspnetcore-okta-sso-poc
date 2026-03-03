@@ -1,0 +1,26 @@
+@{
+    ViewData["Title"] = "Anonymous";
+}
+
+<div class="row">
+    <div class="col-lg-8">
+        <h1 class="display-6 mb-3">Authentication Basics</h1>
+        <p>
+            This page is public and does not require login.
+            It explains how this sample app authentication works.
+        </p>
+
+        <h2 class="h5 mt-4">Flow in this app</h2>
+        <ul>
+            <li><strong>Login</strong>: User submits username and password.</li>
+            <li><strong>Validation</strong>: Controller checks credentials.</li>
+            <li><strong>Cookie Sign-in</strong>: App creates an auth cookie with <code>SignInAsync</code>.</li>
+            <li><strong>Protected pages</strong>: Actions marked with <code>[Authorize]</code> need a valid cookie.</li>
+            <li><strong>Logout</strong>: Cookie is removed with <code>SignOutAsync</code>.</li>
+        </ul>
+
+        <p class="mt-3">
+            In production, replace hardcoded credentials with a database and hashed passwords.
+        </p>
+    </div>
+</div>
