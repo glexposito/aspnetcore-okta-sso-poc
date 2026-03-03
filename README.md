@@ -54,6 +54,17 @@ Default URLs (from launch settings):
 - Public page: `https://localhost:7238/Home/Anonymous`
 - Protected home: `https://localhost:7238/Home/Index`
 
+## Screenshots
+
+### 1. Login Page
+<img width="1081" height="593" alt="image" src="https://github.com/user-attachments/assets/248c2fe5-b09b-47df-87c3-0acafe6dc995" />
+
+### 2. Okta redirection when not logged into Okta
+<img width="1355" height="1182" alt="image" src="https://github.com/user-attachments/assets/093d409f-0f7f-4512-954a-d8bab65807e1" />
+
+### 3. Authenticated Home
+<img width="1080" height="353" alt="image" src="https://github.com/user-attachments/assets/1e1560bc-b94f-4b21-969a-b4f67c24cb9e" />
+
 ## Okta Configuration
 
 ### 1. Create Okta OIDC Web App
@@ -143,10 +154,3 @@ in `OktaSso.Poc.Web.csproj` as a local SDK workaround.
 - Local hardcoded credentials are for demo only.
 - Replace with DB + hashed passwords for real usage.
 - Do not commit real client secrets to source control.
-  - Prefer environment variables or `dotnet user-secrets`.
-
-## Suggested Next Steps
-
-1. Move Okta secrets out of `appsettings.json`.
-2. Replace hardcoded local auth with DB-backed users + password hashing.
-3. Add integration tests for login/redirect flows.
