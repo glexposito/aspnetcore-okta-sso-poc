@@ -75,6 +75,21 @@ public class HomeController : Controller
     }
 
     [AllowAnonymous]
+    public IActionResult OktaLogin(string? returnUrl = null)
+    {
+        var safeReturnUrl = !string.IsNullOrWhiteSpace(returnUrl) && Url.IsLocalUrl(returnUrl)
+            ? returnUrl
+            : Url.Action(nameof(Index), "Home");
+
+        var properties = new AuthenticationProperties
+        {
+            RedirectUri = safeReturnUrl
+        };
+
+        return Challenge(properties, "Okta");
+    }
+
+    [AllowAnonymous]
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {

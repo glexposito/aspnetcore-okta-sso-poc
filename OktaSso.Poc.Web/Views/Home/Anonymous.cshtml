@@ -4,23 +4,22 @@
 
 <div class="row">
     <div class="col-lg-8">
-        <h1 class="display-6 mb-3">Authentication Basics</h1>
+        <h1 class="display-6 mb-3">Public Page</h1>
         <p>
-            This page is public and does not require login.
-            It explains how this sample app authentication works.
+            This page does not require authentication.
+            You can use the button below to sign in with Okta SSO.
         </p>
 
-        <h2 class="h5 mt-4">Flow in this app</h2>
+        <a asp-controller="Home" asp-action="OktaLogin" asp-route-returnUrl="/" class="btn btn-primary mb-4">
+            Login with Okta
+        </a>
+
+        <h2 class="h5 mt-2">Auth Flow in this sample</h2>
         <ul>
-            <li><strong>Login</strong>: User submits username and password.</li>
-            <li><strong>Validation</strong>: Controller checks credentials.</li>
-            <li><strong>Cookie Sign-in</strong>: App creates an auth cookie with <code>SignInAsync</code>.</li>
-            <li><strong>Protected pages</strong>: Actions marked with <code>[Authorize]</code> need a valid cookie.</li>
-            <li><strong>Logout</strong>: Cookie is removed with <code>SignOutAsync</code>.</li>
+            <li><strong>Local Login</strong>: hardcoded credentials for testing only.</li>
+            <li><strong>Okta Login</strong>: redirects to Okta and returns via OIDC callback.</li>
+            <li><strong>Cookie Sign-in</strong>: app stores authenticated session in cookie.</li>
+            <li><strong>Protected pages</strong>: actions with <code>[Authorize]</code> need authentication.</li>
         </ul>
-
-        <p class="mt-3">
-            In production, replace hardcoded credentials with a database and hashed passwords.
-        </p>
     </div>
 </div>
