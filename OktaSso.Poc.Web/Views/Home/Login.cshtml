@@ -25,5 +25,14 @@
 
             <button type="submit" class="btn btn-primary w-100">Sign in</button>
         </form>
+
+        <div class="text-center my-3 text-muted">or</div>
+
+        <a asp-controller="Home"
+           asp-action="OktaLogin"
+           asp-route-returnUrl="@ViewData["ReturnUrl"]"
+           class="btn btn-outline-dark w-100">
+            Login with Okta
+        </a>
     </div>
 </div>
