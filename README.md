@@ -59,10 +59,10 @@ Default URLs (from launch settings):
 ### 1. Login Page
 <img width="1081" height="593" alt="image" src="https://github.com/user-attachments/assets/248c2fe5-b09b-47df-87c3-0acafe6dc995" />
 
-### 2. Okta redirection when not logged into Okta
+### 2. Okta redirection to sign in page when not authenticated via Okta
 <img width="1355" height="1182" alt="image" src="https://github.com/user-attachments/assets/093d409f-0f7f-4512-954a-d8bab65807e1" />
 
-### 3. Authenticated Home
+### 3. Home page when authenticated via Okta
 <img width="1080" height="353" alt="image" src="https://github.com/user-attachments/assets/1e1560bc-b94f-4b21-969a-b4f67c24cb9e" />
 
 ## Okta Configuration
